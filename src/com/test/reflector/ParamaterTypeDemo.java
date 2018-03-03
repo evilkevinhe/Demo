@@ -146,7 +146,7 @@ public class ParamaterTypeDemo {
 					//如果参数是类型变量
 					if (t instanceof TypeVariable) {
 						System.out.println(((TypeVariable<?>) t).getName());
-						System.out.println(((TypeVariable<?>) t).getGenericDeclaration());
+						System.out.println(((TypeVariable<?>) t).getGenericDeclaration());//类型变量声明的位置
 					//如果参数是泛型数组即组件为ParamaterizeType(如：Map<K, V>)或者TypeVariable(如：T)	
 					}else if (t instanceof GenericArrayType) {
 						Type genericComponentType = ((GenericArrayType) t).getGenericComponentType();
