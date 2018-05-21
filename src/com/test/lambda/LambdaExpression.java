@@ -2,7 +2,9 @@ package com.test.lambda;
 
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
@@ -99,4 +101,15 @@ public class LambdaExpression {
 
 	}
 	
+	@Test
+	public void test8(){
+		Set<Integer> ccUserIdList=new HashSet<>();
+		ccUserIdList.forEach(ccUserid->
+		{	
+			System.out.println("running into the lookup?");
+			if (ccUserid==0) {
+				System.out.println("ccUserid==0");
+			}
+		});
+	}
 }
