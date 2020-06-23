@@ -1,7 +1,7 @@
 package com.test.lambda;
 
+import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -111,5 +111,15 @@ public class LambdaExpression {
 				System.out.println("ccUserid==0");
 			}
 		});
+	}
+	@Test
+	public void test9(){
+	    List<Object> list = new ArrayList<>(2);
+	    list.add(1);
+	    list.add(2);
+	    list.add(3);
+	    list.add(4);
+	    list.add(5);
+	    list.stream().forEach(t->{System.out.println(t);});
 	}
 }
